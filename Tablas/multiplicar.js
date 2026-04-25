@@ -1,4 +1,9 @@
 function generarTablas(){
+    let contenido = "";
     let contenedor = document.getElementById("tablas");
-    contenedor.innerHTML = "<h1>PROBANDO</h1>"
+    
+    for(let i = 1; i<=10; i++){
+        contenido += `<p>3 x ${i}= ${3*i}</p>`;
+    }
+    contenedor.innerHTML = contenido;
 }
