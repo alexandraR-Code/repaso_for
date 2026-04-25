@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla del 3</title>
+    <title>Tabla del 3 - Tech</title>
+
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="multiplicar.css">
 </head>
 <body>
@@ -13,7 +17,13 @@
     </header>
 
     <main>
-        <h1>Tabla del 3</h1>
+        <h1 class="titulo">Tabla del 3</h1>
+
+        <!-- NUEVO: Toggle sin JS -->
+        <div class="toggle-container">
+            <input type="checkbox" id="modo">
+            <label for="modo" class="toggle-label">Modo alternativo</label>
+        </div>
 
         <div class="tabla-container">
             <table>
@@ -38,6 +48,11 @@
             </table>
         </div>
     </main>
+
+    <footer>
+        <img src="Logo-Warmi.png" alt="Logo" class="logo">
+        <p>Creado por Alexandra Ramírez</p>
+    </footer>
 
 </body>
 </html>

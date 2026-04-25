@@ -1,79 +1,139 @@
-/* Reset básico */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* VARIABLES TECH */
+:root {
+    --bg: #0f0f0f;
+    --primary: #ff2d9c;
+    --secondary: #7b2cff;
+    --text: #ffffff;
+    --card: #7b2cff;
+}
+
+/* BODY */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    color: var(--text);
     padding: 20px;
 }
 
-/* Header */
+/* HEADER */
 header {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+/* BOTÓN TECH */
 .btn-probar {
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: white;
+    font-family: 'Orbitron', sans-serif;
+    padding: 14px 30px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 0 10px var(--primary);
 }
 
 .btn-probar:hover {
-    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px var(--primary), 0 0 50px var(--secondary);
 }
 
-/* Título */
-h1 {
+/* TÍTULO */
+.titulo {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px var(--primary);
+}
+
+/* TOGGLE */
+.toggle-container {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Tabla */
+.toggle-label {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.toggle-label:hover {
+    background: var(--primary);
+    color: black;
+}
+
+/* TABLA */
 .tabla-container {
     display: flex;
     justify-content: center;
-    overflow-x: auto;
 }
 
 table {
-    border-collapse: collapse;
     width: 100%;
-    max-width: 400px;
-    background: white;
-    border-radius: 10px;
+    max-width: 450px;
+    border-collapse: collapse;
+    background: var(--card);
+    border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,255,255,0.2);
 }
 
-th, td {
+/* ENCABEZADO */
+th {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: black;
+    padding: 15px;
+}
+
+/* CELDAS */
+td {
     padding: 12px;
     text-align: center;
+    border-bottom: 5px solid #55334a;
 }
 
-th {
-    background-color: #007BFF;
-    color: white;
+/* HOVER FUTURISTA */
+tr:hover {
+    background: rgba(255, 0, 234, 0.1);
+    transform: scale(1.02);
+    transition: 0.2s;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
 }
 
-/* Responsive */
+.logo {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
 @media (max-width: 600px) {
+    .titulo {
+        font-size: 1.8rem;
+    }
+
     .btn-probar {
         width: 100%;
-        font-size: 14px;
     }
 
     table {
