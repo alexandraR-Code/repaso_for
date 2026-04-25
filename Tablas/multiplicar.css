@@ -76,6 +76,11 @@ header {
     color: black;
 }
 
+.descripcion{
+    text-align: center;
+    margin: 20px;
+}
+
 /* TABLA */
 .tabla-container {
     display: flex;
