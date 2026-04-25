@@ -14,16 +14,33 @@
 <body>
 
     <header>
-        <button class="btn-probar" onclick="generarTablas();">PROBAR</button>
+        <button class="btn-probar" onclick="generarTablas();">
+            GENERAR
+        </button>
     </header>
 
     <main>
-        <h1 class="titulo">Tabla del 3</h1>
+    <h1 class="titulo">Generador de tablas de multiplicar</h1>
+
+        <p class="descripcion">
+            Ingresa un número y presiona "GENERAR" para ver su tabla del 1 al 10.
+        </p>
 
         <!-- NUEVO: Toggle sin JS -->
-        <div class="toggle-container">
-            <input type="checkbox" id="modo">
-            <label for="modo" class="toggle-label">Modo alternativo</label>
+
+        <div class="input-container">
+        <br></br>
+
+        <input 
+            type="number" 
+            id="numero" 
+            placeholder="Ej: 5"
+            min="1"
+        >
+        <small class="help-text">
+            <br></br>
+            💡 Ejemplos: 2, 5, 10. Solo números positivos.
+        </small>
         </div>
 
         <div class="tabla-container">

@@ -1,9 +1,15 @@
 function generarTablas(){
+    let numero = document.getElementById("numero").value;
     let contenido = "";
-    let contenedor = document.getElementById("tablas");
+    let contenedor = document.getElementById("tablas").querySelector("tbody");
     
     for(let i = 1; i<=10; i++){
-        contenido += `<p>5 x ${i}= ${5*i}</p>`;
+        contenido += `
+            <tr>
+                <td>${numero} x ${i}</td>
+                <td>${numero*i}</td>
+            <tr>
+                `;
     }
     contenedor.innerHTML = contenido;
 }
