@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-probar {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-probar:hover {
+    background-color: #0056b3;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tabla */
+.tabla-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .btn-probar {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
